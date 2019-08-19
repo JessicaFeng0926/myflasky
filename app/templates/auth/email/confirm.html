@@ -1,0 +1,8 @@
+<p>尊敬的{{user.username}}:</p>
+<p>感谢注册<b>Flasky</b>!</p>
+<p>请<a href="{{url_for('auth.confirm',token=token,_external=True)}}">点击这里</a>完成您的账号确认。</p>
+<p>您也可以复制下面的链接并粘贴到您浏览器的地址栏以完成账号确认：</p>
+<p>{{url_for('auth.confirm',token=token,_external=True)}}</p>
+<p>祝您生活愉快！</p>
+<p>Flasky 客服部</p>
+<p><small>温馨提示：请不要回复此邮件，发送到该邮箱的邮件不会被受理。</small></p>
